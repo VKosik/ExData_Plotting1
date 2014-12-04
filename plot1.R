@@ -5,9 +5,9 @@ if (!"ReadingData.R" %in% list.files()) {
 ## reads the previously written code for reading and preparing the data for further analysis
 source("ReadingData.R")
 ## creates a png file into which the next plot will be saved, for further information about the additional commands used use "?png" function
-png(filename="plot1.png",width=480, height=480, bg ="transparent")
+png(filename="plot1.png",width=490, height=490, bg ="transparent")
 ## creates a histogram that looks exactly as the example
-hist(Global_active_power, main="Global Active Power", 
+hist(OurData$Global_active_power, main="Global Active Power", 
        xlab="Global Active Power (kilowatts)", breaks=12,
        ylim=c(0, 1200), col="red")
 ## turns off the png function
